@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f7f7f7;
     color: #333;
 }
 
@@ -30,6 +30,7 @@ nav {
 nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #FFC900;
 }
 
 nav ul {
@@ -49,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    color: #FFC900;
 }
 
 main {
@@ -66,7 +67,7 @@ main {
 
 h1, h2 {
     margin-bottom: 1rem;
-    color: #333;
+    color: #222;
 }
 
 .photo-banner img {
@@ -91,12 +92,14 @@ h1, h2 {
 .location-circle {
     width: 120px;
     height: 120px;
-    border: 2px solid #ccc;
+    border: 3px solid #FFC900;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    color: #333;
+    background-color: #fff;
 }
 
 .message-container {
@@ -128,24 +131,27 @@ h1, h2 {
 button[type="submit"] {
     display: block;
     width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
+    padding: 12px;
+    background-color: #FFC900;
+    color: #1a1a1a;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #e6b500;
 }
 
 .form-output {
     flex: 1;
     padding: 20px;
-    background-color: #e9ecef;
+    background-color: #fffbeb;
     border-radius: 8px;
+    border-left: 5px solid #FFC900;
 }
 
 .form-output h3 {
@@ -153,6 +159,7 @@ button[type="submit"]:hover {
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
+
 .form-output p {
     margin-bottom: 10px;
 }
@@ -160,7 +167,7 @@ button[type="submit"]:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #222;
     color: #fff;
 }
 
@@ -189,4 +196,8 @@ footer {
         align-items: center;
         gap: 20px;
     }
+    }
+    .logo img {
+        height: 40px;
+        width: auto;
 }
