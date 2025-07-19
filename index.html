@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    
+
+    <header>
+        <nav>
+            <div class="logo">MyCompany</div>
+            <ul>
+                <li><a href="#home" id="nav-home">Home</a></li>
+                <li><a href="#profile" id="nav-profile">Our Profile</a></li>
+                <li><a href="#message-us" id="nav-message">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-section" class="content-section">
+            <h1>Hi <span id="user-name">Guest</span>, Welcome To Our Website!</h1>
+            <p>This is a brief introduction to our company's mission and values.</p>
+        </section>
+
+        <section id="profile-section" class="content-section" style="display: none;">
+            <h2>Our Profile</h2>
+            <div class="profile-content">
+                <div class="photo-banner">
+                    <img src="https://via.placeholder.com/800x250" alt="Company Photo Banner">
+                </div>
+                <h3>About The Company</h3>
+                <p>Isi dengan deskripsi tentang perusahaan Anda di sini. Jelaskan sejarah, fokus industri, dan apa yang membuat perusahaan Anda unik.</p>
+                <h3>Vision & Mission</h3>
+                <p><strong>Vision:</strong> Tuliskan visi jangka panjang perusahaan Anda di sini.</p>
+                <p><strong>Mission:</strong> Tuliskan misi atau langkah-langkah konkrit untuk mencapai visi tersebut di sini.</p>
+            </div>
+        </section>
+        
+        <section id="message-us-section" class="content-section">
+            <h2>Message Us</h2>
+            <div class="message-container">
+                <form id="message-form">
+                    <div class="form-group">
+                        <label for="full-name">Name:</label>
+                        <input type="text" id="full-name" name="fullName" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div class="form-output">
+                    <h3>Your Submitted Data:</h3>
+                    <p><strong>Current time:</strong> <span id="output-time"></span></p>
+                    <p><strong>Name:</strong> <span id="output-name"></span></p>
+                    <p><strong>Email:</strong> <span id="output-email"></span></p>
+                    <p><strong>Phone:</strong> <span id="output-phone"></span></p>
+                    <p><strong>Message:</strong> <span id="output-message"></span></p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="headquarters-section">
+             <h2>Our Headquarter</h2>
+             <div class="hq-locations">
+                 <div class="location-circle"><span>Jakarta</span></div>
+                 <div class="location-circle"><span>Bandung</span></div>
+                 <div class="location-circle"><span>Surabaya</span></div>
+             </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by [Nama Anda]</p>
+    </footer>
+
 </body>
 </html>
